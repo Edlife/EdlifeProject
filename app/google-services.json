@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1083482682726",
+    "project_id": "edlifepersonal",
+    "storage_bucket": "edlifepersonal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083482682726:android:d2c563818371c4845704a7",
+        "android_client_info": {
+          "package_name": "com.example.edlifepersonal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083482682726-psr00hjnqih18f6tpjjbfrp0pdgum4nn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6NJQN6fhKrRwra_baLEfzY9bZyLs0dmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083482682726-psr00hjnqih18f6tpjjbfrp0pdgum4nn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

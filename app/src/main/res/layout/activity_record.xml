@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_alt"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/back">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posting"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp">
+        </TextView>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="typing the name"
+        android:id="@+id/title">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="typing the price"
+        android:id="@+id/price">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="typing the content"
+        android:layout_weight="1"
+        android:id="@+id/content">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Books"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothes"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/electronics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electronics"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/computers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computers"
+            android:textStyle="bold">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/foodDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food/Drink"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/cosmetic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cosmetic"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/furniture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture"
+            android:textStyle="bold">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/groceries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groceries"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/household"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Household"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </CheckBox>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_image"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/avatar3"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:text="submit"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/submit">
+    </Button>
+</LinearLayout>

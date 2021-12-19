@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/w2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_image"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/avatar3"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"/>
+            <RadioButton
+                android:id="@+id/btnFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioButton
+                android:id="@+id/btnLGBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LGBT"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nationality"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" choose your nationality "
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnUG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UG"
+                android:checked="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+
+            <RadioButton
+                android:id="@+id/btnPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PG"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioButton
+                android:id="@+id/btnPhd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phd"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioButton
+                android:id="@+id/btnStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" choose your school "
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Degree"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="type your degree"
+            android:layout_marginLeft="38dp"
+            android:textSize="20dp">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interests"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="movie"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="game"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sports"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp">
+        </CheckBox>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlreadyHaveAccount"
+        android:layout_gravity="right"
+        android:text="Already Have Account"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp">
+    </TextView>
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/white">
+    </Button>
+</LinearLayout>
